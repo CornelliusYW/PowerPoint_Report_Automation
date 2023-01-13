@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add .
+          git add report.pptx
           git commit -m "New Report"
           git push origin main
       
