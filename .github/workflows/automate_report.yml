@@ -1,0 +1,23 @@
+name: Automate PowerPoint Report When changes happen
+on: [push]
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Start the Process'
+        env:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Your processing code start here
+          pip install -r requirement.txt
+          python script.py
+    steps:
+      - name: Commit new file
+      run: |
+       git config --global user.email "action@github.com"
+        git config --global user.name "GitHub Action"
+        git add report.pptx
+        git commit -m "New Report"
+        git push origin main
+      
