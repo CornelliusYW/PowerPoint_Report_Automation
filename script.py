@@ -25,6 +25,6 @@ img.savefig('graph/heatmap1.png')
 left = Inches(3)
 top = Inches(4)
 height = Inches(4)
-pic = slide2.shapes.add_picture('heatmap1.png', left, top, height=height)
+pic = slide2.shapes.add_picture('graph/heatmap1.png', left, top, height=height)
 
 prs.save('report.pptx')
