@@ -23,7 +23,7 @@ img = sns.heatmap(df.corr(), annot = True).get_figure()
 img.savefig('graph/heatmap1.png')
 
 left = Inches(3)
-top = Inches(4)
+top = Inches(3)
 height = Inches(4)
 pic = slide2.shapes.add_picture('graph/heatmap1.png', left, top, height=height)
 
