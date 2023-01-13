@@ -20,7 +20,7 @@ slide2 = prs.slides.add_slide(title_only_slide_layout)
 slide2.shapes.title.text = 'Add Image with Python'
 
 img = sns.heatmap(df.corr(), annot = True).get_figure()
-img.savefig('heatmap1.png')
+img.savefig('graph/heatmap1.png')
 
 left = Inches(3)
 top = Inches(4)
