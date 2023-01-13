@@ -12,12 +12,11 @@ jobs:
           # Your processing code start here
           pip install -r requirement.txt
           python script.py
-    steps:
       - name: Commit new file
-      run: |
-       git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
-        git add report.pptx
-        git commit -m "New Report"
-        git push origin main
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add report.pptx
+          git commit -m "New Report"
+          git push origin main
       
